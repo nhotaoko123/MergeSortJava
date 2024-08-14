@@ -8,7 +8,27 @@ This repository contains an implementation of the Merge Sort algorithm in Java. 
 - **Stable Sort**: Maintains the relative order of equal elements.
 - **Recursive Implementation**: The algorithm is implemented using recursion.
 
-## Getting Started
+### Steps to Implement Merge Sort
+
+1. **Divide the Array**:
+   - Calculate the middle index to split the array into two halves.
+   - Formula: `middle = (l + r) / 2`, where `l` is the starting index and `r` is the ending index.
+
+2. **Recursive Sorting**:
+   - **First Half**: Recursively apply the `mergeSort` function to the first half of the array.
+     ```java
+     mergeSort(arr, l, middle);
+     ```
+   - **Second Half**: Recursively apply the `mergeSort` function to the second half of the array.
+     ```java
+     mergeSort(arr, middle + 1, r);
+     ```
+
+3. **Merge**:
+   - After both halves are sorted, merge them together to form a single sorted array.
+     ```java
+     merge(arr, l, middle, r);
+     ```
 
 ### Prerequisites
 
