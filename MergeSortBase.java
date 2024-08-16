@@ -80,7 +80,7 @@ public class MergeSortBase {
         System.out.println("Mảng ban đầu:");
         printArray(arr);
 
-        MergeSort ob = new MergeSort();
+        MergeSortBase ob = new MergeSortBase();
         ob.sort(arr, 0, arr.length - 1);
 
         System.out.println("Mảng sau khi sắp xếp:");

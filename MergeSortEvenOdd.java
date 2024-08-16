@@ -1,4 +1,4 @@
-public class mergesort {
+public class MergeSortEvenOdd {
 
         // Merge hai mảng con của arr[].
         // Mảng con thứ nhất là arr[l..m]
@@ -106,7 +106,7 @@ public class mergesort {
             System.out.println("Mảng ban đầu:");
             printArray(arr);
     
-            mergesort ob = new mergesort();
+            MergeSortEvenOdd ob = new MergeSortEvenOdd();
             ob.sort(arr, 0, arr.length - 1);
     
             System.out.println("Mảng sau khi sắp xếp:");
