@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class TwoPointer {
-    public int[] twopointer(int[] numbers, int target) {
+    public static int[] twopointer(int[] numbers, int target) {
         int left_index = 0, right_index = numbers.length - 1;
         if (numbers[right_index] < target){
             return new int[]{};
@@ -27,7 +27,7 @@ public class TwoPointer {
 
     }
 
-    public void main(){
+    public static void main(String[] args){
         int arr[] = { 2, 4, 9, 10, 11, 22, 24, 31, 48, 56, 76, 86 };
         int target = 56;
         int[]target_index;
